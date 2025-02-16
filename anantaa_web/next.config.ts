@@ -5,3 +5,7 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+nextConfig.exports = {
+  trailingSlash: true,
+};
+
