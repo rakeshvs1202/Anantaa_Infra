@@ -46,7 +46,7 @@ export default function Navbar() {
               <Link href="/irrigation" className="px-4 py-2">Irrigation</Link>
             </div>
           </div>
-          <div className="relative group">
+          {/* <div className="relative group">
             <button className={`pb-1 ${pathname.includes("/proj_") ? "text-blue-600" : "text-black"}`}>
               Projects
             </button>
@@ -54,7 +54,11 @@ export default function Navbar() {
               <Link href="/proj_past" className="px-2 py-2">Past Projects</Link>
               <Link href="/proj_ongoing" className="px-2 py-2">Ongoing Projects</Link>
             </div>
-          </div>
+          </div> */}
+          <Link href="/projects" className={`relative pb-1 ${pathname === "/projects" ? "text-blue-600" : "text-black"}`}>
+            Projects
+            {pathname === "/projects" && <span className="absolute left-0 bottom-0 w-full h-1 bg-blue-600"></span>}
+          </Link>
           <Link href="/contactUs" className={`relative pb-1 ${pathname === "/contactUs" ? "text-blue-600" : "text-black"}`}>
             Contact Us
             {pathname === "/contactUs" && <span className="absolute left-0 bottom-0 w-full h-1 bg-blue-600"></span>}
@@ -97,7 +101,7 @@ export default function Navbar() {
             <Link href="/construction" className="text-black my-2">Construction</Link>
             <Link href="/irrigation" className="text-black mb-2">Irrigation</Link>
           </motion.div>
-          <button className="flex justify-between items-center w-full text-left" onClick={() => setIsProjectsDown(!isProjectsDown)}>
+          {/* <button className="flex justify-between items-center w-full text-left" onClick={() => setIsProjectsDown(!isProjectsDown)}>
             Projects
             <ChevronDown className={`transition-transform ${isProjectsDown ? "rotate-180" : "rotate-0"}`} />
           </button>
@@ -110,8 +114,8 @@ export default function Navbar() {
           >
             <Link href="/ser_const" className="text-black my-2">Past Projects</Link>
             <Link href="/ser_irri" className="text-black mb-2">Ongoing Projects</Link>
-          </motion.div>
-
+          </motion.div> */}
+          <Link href="/projects" className={`${pathname === "/projects" ? "text-blue-600 font-bold" : "text-black"} mb-2`}>Projects</Link>
           <Link href="/contactUs" className={`${pathname === "/contactUs" ? "text-blue-600 font-bold" : "text-black"} mb-2`}>Contact Us</Link>
         </div>
       </motion.div>

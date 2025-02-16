@@ -109,7 +109,7 @@ export default function ContactUs() {
           >
             <iframe
               className="w-full h-72 rounded-xl shadow-xl border border-gray-200"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6957167435796!2d78.39525827470408!3d17.433344601525376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91a24142b71b%3A0x9eb3ad35d8e2b32!2sDNC%20Infrastructure%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=17.443492,78.397592+(My%20Bus)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               loading="lazy"
               allowFullScreen
             ></iframe>
@@ -126,98 +126,58 @@ export default function ContactUs() {
           We’d Love to Hear From You
         </motion.h3>
         <motion.div
-          className="w-full bg-white p-4 mt-12 rounded-2xl shadow-xl"
+          className="w-full bg-white p-4 mt-12 rounded-xl shadow-lg"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <form onSubmit={onSubmit} action="/" className="space-y-6">
-            {/* Name and Phone Number */}
-            <div className="flex flex-col md:flex-row gap-3 md:gap-6 lg:gap-8">
-              <div className="flex-1">
-                <label htmlFor="name" className="text-gray-700 text-xl font-medium mb-2 block text-center md:text-left">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
-                  required
-                />
-              </div>
-
-              <div className="flex-1">
-                <label htmlFor="phone" className="text-gray-700 text-xl font-medium mb-2 block text-center md:text-left">
-                  Phone Number
-                </label>
-                <input
-                  type="number"
-                  id="phone"
-                  name="phone"
-                  className="py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
-                  required
-                />
-              </div>
-            </div>
-
-            {/* Sector and City */}
-            <div className="flex flex-col md:flex-row gap-3 md:gap-6 lg:gap-8">
-              <div className="flex-1">
-                <label htmlFor="sector" className="text-gray-700 text-xl font-medium mb-2 block text-center md:text-left">
-                  Sector
-                </label>
-                <select
-                  id="sector"
-                  name="sector"
-                  required
-                  className="px-2 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
-                >
-                  <option value="">Please select</option>
-                  <option value="irrigation">Irrigation</option>
-                  <option value="construction">Construction</option>
-                </select>
-              </div>
-
-              <div className="flex-1">
-                <label htmlFor="city" className="text-gray-700 text-xl font-medium mb-2 block text-center md:text-left">
-                  City
-                </label>
-                <select
-                  id="city"
-                  name="city"
-                  required
-                  className="px-2 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
-                >
-                  <option value="">Please select</option>
-                  <option value="Hyderabad">Hyderabad</option>
-                  <option value="Mumbai">Mumbai</option>
-                  <option value="Bangalore">Bangalore</option>
-                </select>
-              </div>
-            </div>
-
-            {/* Enquiry Description */}
-            <div className="flex flex-col">
-              <label htmlFor="description" className="text-gray-700 text-xl  font-medium mb-2 block text-center md:text-left">
-                Enquiry Details
-              </label>
-              <textarea
-                id="description"
-                name="description"
-                className="px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
+          <form onSubmit={onSubmit} action="/" className="space-y-4">
+            {/* Name, Email, Mobile No */}
+            <div className="flex flex-col md:flex-row gap-3">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                className="py-3 px-4 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
                 required
-              ></textarea>
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                className="py-3 px-4 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
+                required
+              />
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="Mobile No"
+                pattern="^[+]?[0-9]{1,13}$"
+                maxLength={14}
+                className="py-3 px-4 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
+                required
+              />
             </div>
 
-            {/* Submit Button - Small & Centered on Larger Screens */}
+            {/* Message */}
+            <textarea
+              id="description"
+              name="description"
+              placeholder="Message"
+              className="px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 w-full h-32"
+              required
+            ></textarea>
+
+            {/* Submit Button */}
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="py-2 px-12 bg-red-500 text-white font-semibold rounded-xl shadow-lg hover:bg-red-600 transition duration-300 
-                  w-full md:w-auto text-xl"  // Full width on mobile, auto-sized on medium+
+                className="py-2 px-12 bg-slate-700 text-white font-semibold rounded-xl shadow-lg hover:bg-red-600 transition duration-300 text-xl"
               >
-                Submit Enquiry
+                Submit
               </button>
             </div>
           </form>
