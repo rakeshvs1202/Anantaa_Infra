@@ -51,9 +51,21 @@ const HomePage = () => {
         return () => clearInterval(interval);
     }, []);
 
-    useEffect(()=>{
-        setItemsPerSlide(window.innerWidth < 768 ? 2 : 3)
-    },[window.innerWidth])
+
+    useEffect(() => {
+        const updateItemsPerSlide = () => {
+            setItemsPerSlide(window.innerWidth < 768 ? 2 : 3);
+        };
+    
+        if (typeof window !== "undefined") { 
+            updateItemsPerSlide();
+            window.addEventListener("resize", updateItemsPerSlide);
+        }
+    
+        return () => {
+            window.removeEventListener("resize", updateItemsPerSlide);
+        };
+    }, []);
     useEffect(() => {
         if (videoRef.current) {
             videoRef.current.src = videos[currentVideoIndex].src;
