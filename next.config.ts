@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  trailingSlash: true, // Ensures URLs end with a slash
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  basePath: "",
+  reactStrictMode: true,
+  trailingSlash: true, 
+  swcMinify: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
