@@ -20,7 +20,7 @@ const projects = {
 };
 
 export default function Projects() {
-  const [activeTab, setActiveTab] = useState("past");
+  const [activeTab, setActiveTab] = useState<"past" | "ongoing">("past");
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   return (
@@ -43,7 +43,7 @@ export default function Projects() {
 
       {/* Project Gallery */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {projects[activeTab].map((project) => (
+      {projects[activeTab as "past" | "ongoing"].map((project) => (
           <motion.div
           key={project.id}
           className="relative overflow-hidden rounded-lg cursor-pointer"
