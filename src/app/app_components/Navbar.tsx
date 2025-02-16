@@ -19,7 +19,7 @@ export default function Navbar() {
 
         <Link href="/">
           <Image
-            src="/anantaa logo.jpg"
+            src="https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713016/Anantaa_Images/cok8mtqd5f62yzuqmblw.jpg"
             alt="Logo"
             width={50}
             height={35}

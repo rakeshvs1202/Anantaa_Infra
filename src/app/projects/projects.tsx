@@ -6,16 +6,16 @@ import Image from "next/image";
 
 const projects = {
   past: [
-    { id: 1, title: "Bridge Construction", img: "/bridgeConProject.jpg", desc: "A major bridge project spanning 5 km." },
-    { id: 2, title: "Irrigation Dam", img: "/irrigationProject.jpg", desc: "A large-scale dam project for water management." },
-    { id: 3, title: "Railway Ancillary Project", img: "/railwayAncillaryProject.jpg", desc: "Supporting infrastructure for railway expansion." },
-    { id: 4, title: "Check Dam", img: "/checkDamProject.jpg", desc: "A check dam to improve water retention in arid regions." }
+    { id: 1, title: "Bridge Construction", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713016/Anantaa_Images/ewcf4ztb96znhcfr16r4.jpg", desc: "A major bridge project spanning 5 km." },
+    { id: 2, title: "Irrigation Dam", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713018/Anantaa_Images/ldggwl8hl5vkhwrtsejz.jpg", desc: "A large-scale dam project for water management." },
+    { id: 3, title: "Railway Ancillary Project", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713020/Anantaa_Images/g7xlb8kelsfu9fpb8mgc.jpg", desc: "Supporting infrastructure for railway expansion." },
+    { id: 4, title: "Check Dam", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713017/Anantaa_Images/s0lqdwzio01lzryxea1n.jpg", desc: "A check dam to improve water retention in arid regions." }
   ],
   ongoing: [
-    { id: 5, title: "Building Construction", img: "/buildingConProject.jpg", desc: "Modern high-rise development in the city center." },
-    { id: 6, title: "Highway Expansion", img: "/highwayExpansionProject.jpg", desc: "Improving road infrastructure for better connectivity." },
-    { id: 7, title: "Urban Drainage System", img: "/drainageSystemProject.jpg", desc: "Enhancing drainage systems to prevent urban flooding." },
-    { id: 8, title: "Retaining Wall", img: "/retainingWallProject.jpg", desc: "Stabilizing land using reinforced retaining walls." }
+    { id: 5, title: "Building Construction", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713017/Anantaa_Images/e58yjybcanhlnaoikqzd.jpg", desc: "Modern high-rise development in the city center." },
+    { id: 6, title: "Highway Expansion", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713017/Anantaa_Images/rdnpbmrq8f57hf2g9l8f.jpg", desc: "Improving road infrastructure for better connectivity." },
+    { id: 7, title: "Urban Drainage System", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713018/Anantaa_Images/ruficr03wu7xqsofdh0s.jpg", desc: "Enhancing drainage systems to prevent urban flooding." },
+    { id: 8, title: "Retaining Wall", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713020/Anantaa_Images/sz27smpcugkhquywki8m.jpg", desc: "Stabilizing land using reinforced retaining walls." }
   ]
 };
 

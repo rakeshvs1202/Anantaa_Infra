@@ -57,7 +57,7 @@ export default function ContactUs() {
             <div className="flex items-start gap-6">
               <div className="bg-red-100 p-3 rounded-xl">
                 <Image
-                  src="/mapGIF.gif"
+                  src="https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713020/Anantaa_Images/dgtnlnwqsv7qpsuzteew.gif"
                   alt="addressGIF"
                   width={30}
                   height={30}
@@ -77,7 +77,7 @@ export default function ContactUs() {
               <div className="bg-red-100 p-3 rounded-xl">
                 <Image
                   className="w-7 h-7"
-                  src="/phoneGIF.gif"
+                  src="https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713019/Anantaa_Images/vvqguu8z6xc55apb2kl5.gif"
                   alt="phoneGIF"
                   width={30}
                   height={30}
@@ -91,7 +91,7 @@ export default function ContactUs() {
 
             <div className="flex items-center gap-6">
               <div className="bg-red-100 p-3 rounded-xl">
-                <Image className="w-7 h-7" src='/emailGIF.gif' alt='emailGIF' width={30} height={30} />
+                <Image className="w-7 h-7" src='https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713016/Anantaa_Images/icv3pkjajpmyp5okai0x.gif' alt='emailGIF' width={30} height={30} />
               </div>
               <div>
                 <p className="text-gray-600 font-medium">info@anantaa.in</p>

@@ -6,23 +6,23 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 const services = [
-    { title: "Bridge Construction", img: "/bridgeConProject.jpg", desc: "A major bridge project spanning 5 km." },
-    { title: "Irrigation Dam", img: "/irrigationProject.jpg", desc: "A large-scale dam project for water management." },
-    { title: "Railway Ancillary Project", img: "/railwayAncillaryProject.jpg", desc: "Supporting infrastructure for railway expansion." },
-    { title: "Check Dam", img: "/checkDamProject.jpg", desc: "A check dam to improve water retention in arid regions." },
-    { title: "Building Construction", img: "/buildingConProject.jpg", desc: "Modern high-rise development in the city center." },
-    { title: "Highway Expansion", img: "/highwayExpansionProject.jpg", desc: "Improving road infrastructure for better connectivity." },
-    { title: "Urban Drainage System", img: "/drainageSystemProject.jpg", desc: "Enhancing drainage systems to prevent urban flooding." },
-    { title: "Retaining Wall", img: "/retainingWallProject.jpg", desc: "Stabilizing land using reinforced retaining walls." }
+    { title: "Bridge Construction", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713016/Anantaa_Images/ewcf4ztb96znhcfr16r4.jpg", desc: "A major bridge project spanning 5 km." },
+    { title: "Irrigation Dam", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713018/Anantaa_Images/ldggwl8hl5vkhwrtsejz.jpg", desc: "A large-scale dam project for water management." },
+    { title: "Railway Ancillary Project", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713020/Anantaa_Images/g7xlb8kelsfu9fpb8mgc.jpg", desc: "Supporting infrastructure for railway expansion." },
+    { title: "Check Dam", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713017/Anantaa_Images/s0lqdwzio01lzryxea1n.jpg", desc: "A check dam to improve water retention in arid regions." },
+    { title: "Building Construction", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713017/Anantaa_Images/e58yjybcanhlnaoikqzd.jpg", desc: "Modern high-rise development in the city center." },
+    { title: "Highway Expansion", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713017/Anantaa_Images/rdnpbmrq8f57hf2g9l8f.jpg", desc: "Improving road infrastructure for better connectivity." },
+    { title: "Urban Drainage System", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713018/Anantaa_Images/ruficr03wu7xqsofdh0s.jpg", desc: "Enhancing drainage systems to prevent urban flooding." },
+    { title: "Retaining Wall", img: "https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713020/Anantaa_Images/sz27smpcugkhquywki8m.jpg", desc: "Stabilizing land using reinforced retaining walls." }
 ];
 const videos = [
     {
-        src: "/homePageVedio.mp4",
+        src: "https://res.cloudinary.com/dzmtzssaq/video/upload/v1739713037/Anantaa_Images/qpajiscx8rkk2uf2911s.mp4",
         title: "Building a Sustainable Future",
         subtitle: "Innovating infrastructure for tomorrow.",
     },
     {
-        src: "/homePageAgriVideo.mp4",
+        src: "https://res.cloudinary.com/dzmtzssaq/video/upload/v1739713025/Anantaa_Images/sgiqqt91ikgz5nogtvwy.mp4",
         title: "Empowering Agriculture with Innovation",
         subtitle: "Advancing sustainable farming solutions.",
     },

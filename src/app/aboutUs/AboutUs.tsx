@@ -42,7 +42,7 @@ export default function AboutUs() {
             transition={{ duration: 1.2 }}
           >
             <Image
-              src="/constructionImg.jpg"
+              src="https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713017/Anantaa_Images/yasqyxdax9h1xxjs4kw5.jpg"
               alt="Construction site"
               width={500}
               height={300}

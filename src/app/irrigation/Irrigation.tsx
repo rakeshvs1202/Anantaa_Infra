@@ -23,7 +23,7 @@ export default function Irrigation() {
           transition={{ duration: 1.2 }}
         >
           <Image
-            src="/irrigationSystem.png" // Replace with a relevant irrigation image
+            src="https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713019/Anantaa_Images/umegv4owufymswpooqz5.png" // Replace with a relevant irrigation image
             alt="Modern Irrigation System"
             width={500}
             height={250}

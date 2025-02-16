@@ -44,7 +44,7 @@ export default function Construction() {
           transition={{ duration: 1.2 }}
         >
           <Image
-            src="/constructionSite.png" 
+            src="https://res.cloudinary.com/dzmtzssaq/image/upload/v1739713018/Anantaa_Images/lfnhfjybovc3pne2r9wh.png" 
             alt="Construction Project"
             width={600}
             height={350}
