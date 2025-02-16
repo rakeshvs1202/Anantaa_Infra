@@ -23,7 +23,7 @@ export default function Navbar() {
             alt="Logo"
             width={50}
             height={35}
-            className="h-auto w-auto max-w-[120px] md:max-w-[150px]"
+            className="max-w-[120px] md:max-w-[150px]"
           />
         </Link>
 

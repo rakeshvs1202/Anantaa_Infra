@@ -31,7 +31,7 @@ const videos = [
 const HomePage = () => {
     const [index, setIndex] = useState(0);
     const controls = useAnimation();
-    const itemsPerSlide = 3;
+    const [itemsPerSlide, setItemsPerSlide] = useState(3)
     const maxIndex = Math.ceil(services.length / itemsPerSlide) - 1;
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
     const videoRef = useRef<HTMLVideoElement | null>(null); // ✅ Correct useRef syntax
@@ -47,7 +47,9 @@ const HomePage = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 3000);
+        }, 5000);
+        setItemsPerSlide(window.innerWidth < 768 ? 2 : 3)
+       console.log(itemsPerSlide)
         return () => clearInterval(interval);
     }, []);
 
@@ -63,9 +65,6 @@ const HomePage = () => {
         setCurrentVideoIndex((prev) => (prev + 1) % videos.length);
     };
 
-    const prevVideo = () => {
-        setCurrentVideoIndex((prev) => (prev - 1 + videos.length) % videos.length);
-    };
     return (
         <div className="bg-white text-gray-900">
             {/* Hero Section */}
@@ -111,7 +110,7 @@ const HomePage = () => {
                         <h2 className="text-3xl font-bold text-gray-800">Shaping a Resilient Future</h2>
                         <h4 className="text-xl font-semibold text-gray-600 mt-3">Leading sustainable innovation for transformative infrastructure and thriving communities.</h4>
                         <p className="mt-4 text-gray-700 text-center max-w-3xl mx-auto">
-                         At Anantaa Infrastructure Pvt Ltd, we set new industry standards through innovation, expertise, and sustainability.
+                            At Anantaa Infrastructure Pvt Ltd, we set new industry standards through innovation, expertise, and sustainability.
                         </p>
                     </div>
                     <div className="relative flex items-center justify-center overflow-hidden">
