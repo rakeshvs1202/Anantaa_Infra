@@ -52,7 +52,6 @@ const HomePage = () => {
     }, []);
 
     useEffect(() => {
-        console.log("videoRef.current:", videoRef.current); // ✅ Debugging
         if (videoRef.current) {
             videoRef.current.src = videos[currentVideoIndex].src;
             videoRef.current.load(); // ✅ Ensure video reloads before playing
