@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/Anantaa_Infra",
+  basePath: "",
   reactStrictMode: true,
   trailingSlash: true, 
   swcMinify: true,
